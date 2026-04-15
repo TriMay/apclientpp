@@ -157,7 +157,7 @@ Once `slot_connected` was received, a `socket_error` or `socket_disconnected` ca
 * socket_disconnected `(void)`: called when the socket gets disconnected - no action required, reconnect is automatic.
 * room_info `(void)`: called when the server sent room info. send `ConnectSlot` from this callback.
 * slot_connected `(const json&)`: called as reply to `ConnectSlot` when successful. argument is slot data.
-* slot_refused `(const std::list<std::string>&)`: called as reply to `ConnectSlot` failed. argument is reason.
+* slot_refused `(const std::list<std::string>&)`: called as reply to `ConnectSlot` when failed. argument is reason.
 * slot_disconnected `(void)`: currently unused
 * items_received `(const std::list<NetworkItem>&)`: called when receiving items - previously received after connect and new over time
 * location_info `(const std::list<NetworkItem>&)`: called as reply to `LocationScouts`
